@@ -59,6 +59,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 		{foreach from=$PrintCssFileList item=cssFile}
 		<link rel='stylesheet' type='text/css' href='{$Path}{$cssFile}' media='print' />
 		{/foreach}
+		{else}
+		<link rel='stylesheet' type='text/css' href='css/print.css' media='print' />
 	{/if}
 
 	<script type="text/javascript">
@@ -99,10 +101,19 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					<ul>
 						<li class="menuitem"><a href="{$Path}{Pages::SCHEDULE}">{translate key="Bookings"}</a></li>
 						<li class="menuitem"><a href="{$Path}{Pages::MY_CALENDAR}">{translate key="MyCalendar"}</a></li>
-						<li class="menuitem"><a href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>
+						<!--<li class="menuitem"><a href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>-->
 						<!--<li class="menuitem"><a href="#">{translate key="Current Status"}</a></li>-->
 						<!--<li class="menuitem"><a href="{$Path}{Pages::OPENINGS}">{translate key="FindAnOpening"}</a></li>-->
 					</ul>
+				</li>
+				<li class="menubaritem"><a href="#">Cable Help</a> 
+					<ul>
+						<li class="menuitem"><a href="#" onclick="window.open('http://seagullx2.com/labanlibrary/Web/cables.html','','Toolbar=0,Location=0,Directories=0,Status=0,Menubar=0,Scrollbars=0,Resizable=0,Width=820,Height=620');">Which Cable do I need?</a></li>
+						<!--<li class="menuitem"><a href="{$Path}{Pages::MY_CALENDAR}">{translate key="MyCalendar"}</a></li>-->
+						<!--<li class="menuitem"><a href="{$Path}{Pages::CALENDAR}">{translate key="ResourceCalendar"}</a></li>-->
+						<!--<li class="menuitem"><a href="#">{translate key="Current Status"}</a></li>-->
+						<!--<li class="menuitem"><a href="{$Path}{Pages::OPENINGS}">{translate key="FindAnOpening"}</a></li>-->
+				</ul>
 				</li>
 			{if $CanViewAdmin}
 				<li class="menubaritem"><a href="#">{translate key=ApplicationManagement}</a>
@@ -186,7 +197,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 					<ul>
 						<li><a href="{$Path}help.php">{translate key=Help}</a></li>
 						{if $CanViewAdmin}<li><a href="{$Path}help.php?ht=admin">{translate key=Administration}</a></li>{/if}
-						<li><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
+						<li><a href="http://moodle.trinitylaban.ac.uk/mod/page/view.php?id=18446">{translate key=About}</a></li>
 					</ul>
 				</li>
 			</ul>

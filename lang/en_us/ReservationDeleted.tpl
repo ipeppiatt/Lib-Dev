@@ -16,7 +16,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
-	Reservation Details:
+	<p>Reservation Details:</p>
 	<br/>
 	<br/>
 
@@ -24,7 +24,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	Starting: {formatdate date=$StartDate key=reservation_email}<br/>
 	Ending: {formatdate date=$EndDate key=reservation_email}<br/>
 	{if $ResourceNames|count > 1}
-		Resources:<br/>
+		<strong>Equipment Booked</strong>:<br/>
 		{foreach from=$ResourceNames item=resourceName}
 			{$resourceName}<br/>
 		{/foreach}
@@ -58,4 +58,4 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 
 	<br/>
         <br/>
-	<a href="{$ScriptUrl}">Log in to Booked Scheduler</a>
+	<a href="{$ScriptUrl}">Log in to the Laban Library Equipment Booking system</a>

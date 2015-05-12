@@ -16,17 +16,20 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
-Your reservation is starting soon.<br/>
+Your equipment booking is due to start soon.<br/>
+<br />Please ensure you pick it up on time. You can collect the equipment from the issue desk at Laban Library.
+<br />If you have already collected the equipment, please ignore this auto-generated email.
+<br />
+<br />
 Reservation Details:
 	<br/>
 	<br/>
 	Start: {formatdate date=$StartDate key=reservation_email}<br/>
 	End: {formatdate date=$EndDate key=reservation_email}<br/>
 	Resource: {$ResourceName}<br/>
-	Title: {$Title}<br/>
-	Description: {$Description|nl2br}<br/>
+	
 <br/>
 <br/>
-<a href="{$ScriptUrl}/{$ReservationUrl}">View this reservation</a> |
+<a href="{$ScriptUrl}/{$ReservationUrl}">View this booking</a> |
 <a href="{$ScriptUrl}/{$ICalUrl}">Add to Calendar</a> |
 <a href="{$ScriptUrl}">Log in to Booked Scheduler</a>

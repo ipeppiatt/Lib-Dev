@@ -21,7 +21,8 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 {/block}
 
 <div id="reservationbox">
-
+<h2>Please be aware that you can only book up to 4 items of equipment using this form (a maximum 2 of each category of equipment).
+<br />If you require more equipment than you can book through this form, please contact i.peppiatt@trinitylaban.ac.uk).</h2>
 <form id="reservationForm" method="post" enctype="multipart/form-data">
 
 <div class="reservationSubmitButtons buttonsTop">
@@ -149,12 +150,12 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	{/if}
 	{control type="RecurrenceControl" RepeatTerminationDate=$RepeatTerminationDate}
     </li>
-        <li class="rsv-box-l">
+         <li class="rsv-box-l" display="none">
             <label>{translate key="ReservationTitle"}<br/>
 			{textbox name="RESERVATION_TITLE" class="input" tabindex="100" value="ReservationTitle"}
             </label>
         </li>
-        <li class="rsv-box-l">
+	<li class="rsv-box-l" display="none">
             <label>{translate key="ReservationDescription"}<br/>
                 <textarea id="description" name="{FormKeys::DESCRIPTION}" class="input" rows="2" cols="52"
                           tabindex="110">{$Description}</textarea>

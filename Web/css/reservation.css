@@ -37,6 +37,10 @@
 	color: #777;
 }
 
+#reservationbox .rsv-box-l {
+	display: none;
+	}
+
 #reservationbox.readonly label {
 	font-size: 16px;
 	font-weight: bold;
@@ -59,9 +63,7 @@
 
 #reservationDetails {
 	float: left;
-	width: 50%;
-	border-right: solid 1px #ccc;
-	padding-right: 25px;
+	width: 100%;
 }
 
 .reservationButtons {
@@ -185,3 +187,5 @@ label.reservationDate {
 	margin: 15px 0;
 	font-size:smaller;
 }
+
+#Printonly{}

@@ -16,6 +16,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 *}
+<br/> Thank you for placing an equipment booking from Laban Library & Archive. 
 	Reservation Details:
 	<br/>
 	<br/>
@@ -23,7 +24,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	Starting: {formatdate date=$StartDate key=reservation_email}<br/>
 	Ending: {formatdate date=$EndDate key=reservation_email}<br/>
 	{if $ResourceNames|count > 1}
-		Resources:<br/>
+		<strong>Equipment Booked</strong>:<br/>
 		{foreach from=$ResourceNames item=resourceName}
 			{$resourceName}<br/>
 		{/foreach}
@@ -49,7 +50,7 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	{/foreach}
 
 	{if $Accessories|count > 0}
-		<br/>Accessories:<br/>
+		<br/><strong>Accessories:</strong><br/>
 		{foreach from=$Accessories item=accessory}
 			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
 		{/foreach}
@@ -73,7 +74,9 @@ along with Booked Scheduler.  If not, see <http://www.gnu.org/licenses/>.
 	{/if}
 
 	<br/>
+	If you would like to make any changes to this booking, you can log in and amend or cancel the booking. 
+	<p>Or call +44 (0)20 8305 9333 or email Librarians-Dance@trinitylaban.ac.uk</p>
 	<br/>
 	<a href="{$ScriptUrl}/{$ReservationUrl}">View this reservation</a> |
 	<a href="{$ScriptUrl}/{$ICalUrl}">Add to Calendar</a> |
-	<a href="{$ScriptUrl}">Log in to Booked Scheduler</a>
+	<a href="{$ScriptUrl}">Log in to the Laban Library Equipment Booking pages</a>

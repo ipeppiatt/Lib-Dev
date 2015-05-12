@@ -224,7 +224,7 @@ class en_us extends Language
 		$strings['NotSignedIn'] = 'You are not signed in';
 		$strings['ReservationTitle'] = 'Title of reservation';
 		$strings['ReservationDescription'] = 'Description of reservation';
-		$strings['ResourceList'] = 'Resources to be reserved';
+		$strings['ResourceList'] = 'Equipment to be reserved';
 		$strings['Accessories'] = 'Accessories';
 		$strings['ParticipantList'] = 'Participants';
 		$strings['InvitationList'] = 'Invitees';
@@ -283,7 +283,7 @@ class en_us extends Language
 		$strings['YourReferenceNumber'] = 'Your reference number is %s';
 		$strings['UpdatingReservation'] = 'Updating reservation';
 		$strings['ChangeUser'] = 'Change User';
-		$strings['MoreResources'] = 'More Resources';
+		$strings['MoreResources'] = 'Add/Remove Equipment';
 		$strings['ReservationLength'] = 'Reservation Length';
 		$strings['ParticipantList'] = 'Participant List';
 		$strings['AddParticipants'] = 'Add Participants';
@@ -567,7 +567,7 @@ class en_us extends Language
 		$strings['ReservationCriticalError'] = 'There was a critical error saving your reservation. If this continues, contact your system administrator.';
 		$strings['InvalidStartReminderTime'] = 'The start reminder time is not valid.';
 		$strings['InvalidEndReminderTime'] = 'The end reminder time is not valid.';
-		$strings['QuotaExceeded'] = 'Quota limit exceeded.';
+		$strings['QuotaExceeded'] = 'You have tried to reserve too many items for this date. Please try again with fewer items or email i.peppiatt@trinitylaban.ac.uk.';
 		$strings['MultiDayRule'] = '%s does not allow reservations across days.';
 		$strings['InvalidReservationData'] = 'There were problems with your reservation request.';
 		$strings['PasswordError'] = 'Password must contain at least %s letters and at least %s numbers.';
@@ -596,9 +596,9 @@ class en_us extends Language
 		$strings['Dashboard'] = 'Dashboard';
 		$strings['Help'] = 'Help';
 		$strings['Administration'] = 'Administration';
-		$strings['About'] = 'About';
-		$strings['Bookings'] = 'Bookings';
-		$strings['Schedule'] = 'Schedule';
+		$strings['About'] = 'Help page';
+		$strings['Bookings'] = 'Create a Booking';
+		$strings['Schedule'] = 'Booking Schedule';
 		$strings['Reservations'] = 'Reservations';
 		$strings['Account'] = 'Account';
 		$strings['EditProfile'] = 'Edit My Profile';
@@ -655,9 +655,9 @@ class en_us extends Language
 
 		// Email Subjects
 		$strings['ReservationApprovedSubject'] = 'Your Reservation Has Been Approved';
-		$strings['ReservationCreatedSubject'] = 'Your Reservation Was Created';
-		$strings['ReservationUpdatedSubject'] = 'Your Reservation Was Updated';
-		$strings['ReservationDeletedSubject'] = 'Your Reservation Was Removed';
+		$strings['ReservationCreatedSubject'] = 'Your Laban Library equipment booking has been  Created';
+		$strings['ReservationUpdatedSubject'] = 'Your Laban Library equipment booking has been Updated';
+		$strings['ReservationDeletedSubject'] = 'Your Laban Library equipment booking has been cancelled';
 		$strings['ReservationCreatedAdminSubject'] = 'Notification: A Reservation Was Created';
 		$strings['ReservationUpdatedAdminSubject'] = 'Notification: A Reservation Was Updated';
 		$strings['ReservationDeleteAdminSubject'] = 'Notification: A Reservation Was Removed';
@@ -665,7 +665,7 @@ class en_us extends Language
 		$strings['ParticipantAddedSubject'] = 'Reservation Participation Notification';
 		$strings['ParticipantDeletedSubject'] = 'Reservation Removed';
 		$strings['InviteeAddedSubject'] = 'Reservation Invitation';
-		$strings['ResetPassword'] = 'Password Reset Request';
+		$strings['ResetPassword'] = 'Library Library Equipment Password Reset Request';
 		$strings['ActivateYourAccount'] = 'Please Activate Your Account';
 		$strings['ReportSubject'] = 'Your Requested Report (%s)';
 		$strings['ReservationStartingSoonSubject'] = 'Reservation for %s is starting soon';
